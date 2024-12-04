@@ -3,9 +3,9 @@ public class jump : MonoBehaviour
 {
     private bool isGrounded;
     private Rigidbody2D rb;
-    private float JumpForce = 0.5f;
-    private float JumpHoldForce = 2f;
-    private float JumpHoldDuration = 0.3f;
+    [SerializeField] private float JumpForce = 0.5f;
+    [SerializeField] private float JumpHoldForce = 3f;
+    [SerializeField] private float JumpHoldDuration = 0.3f;
     private bool isJumping = false;
     private float JumpHoldTime;
     void Start()
@@ -31,6 +31,10 @@ public class jump : MonoBehaviour
         if (Input.GetKeyUp(KeyCode.Space))
         {
             isJumping = false;
+            if (rb.velocity.y > 0)
+            {
+                rb.velocity = Vector2.zero;
+            }
         }
     }
     private void OnCollisionEnter2D(Collision2D collision)

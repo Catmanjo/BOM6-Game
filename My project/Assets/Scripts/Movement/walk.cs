@@ -1,7 +1,10 @@
+using Unity.VisualScripting;
 using UnityEngine;
 public class walk : MonoBehaviour
 {
-    [SerializeField] private float moveSpeed = 10f;
+    private float moveSpeed;
+    [SerializeField] private float moveSpeedGround = 7f;
+    [SerializeField] private float moveSpeedAir = 4f;
     private Rigidbody2D rb;
     void Start()
     {
@@ -11,5 +14,14 @@ public class walk : MonoBehaviour
     {
         float moveInput = Input.GetAxis("Horizontal");
         rb.velocity = new Vector2(moveInput * moveSpeed, rb.velocity.y);
+
+        if(rb.velocity.y == 0)
+        {
+            moveSpeed = moveSpeedGround;
+        }
+        else
+        {
+            moveSpeed = moveSpeedAir;
+        }
     }
 }
