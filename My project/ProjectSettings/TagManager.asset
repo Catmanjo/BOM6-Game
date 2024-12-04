@@ -6,6 +6,7 @@ TagManager:
   tags:
   - Hit
   - Sword
+  - Spike
   layers:
   - Default
   - TransparentFX
