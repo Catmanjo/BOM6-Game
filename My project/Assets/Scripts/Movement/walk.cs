@@ -3,8 +3,8 @@ using UnityEngine;
 public class walk : MonoBehaviour
 {
     private float moveSpeed;
-    [SerializeField] private float moveSpeedGround = 7f;
-    [SerializeField] private float moveSpeedAir = 4f;
+    private float moveSpeedGround = 7f;
+    private float moveSpeedAir = 4f;
     private Rigidbody2D rb;
     void Start()
     {

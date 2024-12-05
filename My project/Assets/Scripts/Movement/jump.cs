@@ -3,9 +3,9 @@ public class jump : MonoBehaviour
 {
     private bool isGrounded;
     private Rigidbody2D rb;
-    [SerializeField] private float JumpForce = 0.5f;
-    [SerializeField] private float JumpHoldForce = 3f;
-    [SerializeField] private float JumpHoldDuration = 0.3f;
+    private float JumpForce = 3f;
+    private float JumpHoldForce = 1.5f;
+    private float JumpHoldDuration = 0.3f;
     private bool isJumping = false;
     private float JumpHoldTime;
     void Start()

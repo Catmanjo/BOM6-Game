@@ -831,7 +831,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   JumpForce: 2
-  JumpHoldForce: 3
+  JumpHoldForce: 1.5
   JumpHoldDuration: 0.3
 --- !u!114 &339654307
 MonoBehaviour:
