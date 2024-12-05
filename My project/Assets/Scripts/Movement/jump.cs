@@ -18,7 +18,7 @@ public class jump : MonoBehaviour
         {
             isJumping = true;
             JumpHoldTime = 0f;
-            rb.velocity = new Vector2(rb.velocity.x, JumpForce);
+            rb.velocity = new Vector2(rb.velocity.x, JumpForce * Time.deltaTime);
         }
         if (Input.GetKey(KeyCode.Space) && isJumping)
         {
