@@ -830,8 +830,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 39b042e195d58b44a9e4abb67884cf4b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  JumpForce: 2
-  JumpHoldForce: 1.5
+  JumpForce: 150
+  JumpHoldForce: 4
   JumpHoldDuration: 0.3
 --- !u!114 &339654307
 MonoBehaviour:
@@ -845,8 +845,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9d36005947e97734e8d19820db850c91, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  moveSpeedGround: 7
-  moveSpeedAir: 4
 --- !u!1 &576052779
 GameObject:
   m_ObjectHideFlags: 0
