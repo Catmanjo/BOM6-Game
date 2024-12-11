@@ -725,7 +725,7 @@ Transform:
   m_GameObject: {fileID: 339654300}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0.19, y: -1.01, z: 0}
+  m_LocalPosition: {x: -7.64, y: 12.34, z: 0}
   m_LocalScale: {x: 1, y: 1.4463, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -2297,6 +2297,7 @@ GameObject:
   - component: {fileID: 1072841270}
   - component: {fileID: 1072841271}
   - component: {fileID: 1072841272}
+  - component: {fileID: 1072841273}
   m_Layer: 0
   m_Name: RoofSpike
   m_TagString: Spike
@@ -2431,7 +2432,7 @@ Rigidbody2D:
   m_Mass: 1
   m_LinearDrag: 0
   m_AngularDrag: 0.05
-  m_GravityScale: 0
+  m_GravityScale: 1
   m_Material: {fileID: 0}
   m_IncludeLayers:
     serializedVersion: 2
@@ -2443,6 +2444,22 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 0
+--- !u!114 &1072841273
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1072841268}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c72800116da0a9d4d880aea6001b3606, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Spike: {fileID: 1072841269}
+  DetectRange: 6
+  HorizontalRange: 2
+  Tag: Player
 --- !u!1 &1080610823
 GameObject:
   m_ObjectHideFlags: 0
@@ -3749,7 +3766,7 @@ Transform:
   m_GameObject: {fileID: 1874013652}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0.06, y: -1.8, z: -0.015207231}
+  m_LocalPosition: {x: -0.42, y: -1.8, z: -0.015207231}
   m_LocalScale: {x: 1.317723, y: 1.3608427, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
