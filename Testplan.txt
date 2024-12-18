@@ -1,0 +1,22 @@
+Wie is of zijn de Users:
+Mensen die van complexe platformer games houden en fans van de orginele hollow knight.
+Wat verwachten en hopen we over wat ze van onze game vinden:
+Wij hopen dat ze het een goed spel vinden en het vinden lijken en spelen als het orgineel.
+Wat willen we te weten komen over onze game:
+We willen te weten komen hoe playable zij het vinden en of er bugs zijn die wij over het hoofd hebben gezien.
+Hoe denken we dat terug te kunnen zien in de test, welke observaties hopen we tegen te komen:
+We hopen te zien dat ze niet meteen weg lopen of stoppen met het spel spelen na 1 keer dood gaat.
+Welke test doelen geven we aan de tester:
+We geven het doel om naar boven te gaan en de kist te pakken.
+Hoe moet de tester zich gedragen:
+De tester moet zich gedragen alsof hij dit spel wilt spleen.
+Hoe krijgen we de tester op zijn gemak:
+We introduceren ons aan de tester en dan aan het spel en laten hem dan op zij eigen tempo spelen.
+Hoe moeten de afnemers van de test zich gedragen:
+We beschrijven het doel van het spel en hoe je het moet spelen in het kort en daarna geven we hem wijnig tot geen hints.
+Welke vragen willen de testers laten beantwoorden:
+Voelde het spel goed en vloeiend om te spelen? Was het duidelijk wat je moest doen op elk moment? Wat vond je van de vallende spike?
+Wat hebben we nodig om goed te kunnen testen:
+Een tester, een game om te testen, een plek om te testen en een vragenlijst.
+Wat hebben we nodig om goede footage te krijgen die later ook goed te analyseren is:
+We nemen het scherm en de webcam op met een recording software.

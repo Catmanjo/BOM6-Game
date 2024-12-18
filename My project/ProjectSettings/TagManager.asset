@@ -4,8 +4,7 @@
 TagManager:
   serializedVersion: 2
   tags:
-  - Hit
-  - Sword
+  - Ground
   layers:
   - Default
   - TransparentFX
