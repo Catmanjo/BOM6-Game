@@ -11,6 +11,7 @@ public class SpikeFall : MonoBehaviour
     private Rigidbody2D rb;
     void Start()
     {
+        //pakt de rigidbody van de spike
         rb = Spike.GetComponent<Rigidbody2D>();
         if (rb == null)
         {
@@ -23,6 +24,7 @@ public class SpikeFall : MonoBehaviour
     {
         Vector2 boxSize = new Vector2(HorizontalRange, DetectRange);
         RaycastHit2D hit = Physics2D.BoxCast(Spike.position, boxSize, 0f, Vector2.down, DetectRange);
+        //laat de spike vallen al komt een "Player" in range
         if (hit.collider != null && hit.collider.CompareTag(Tag))
         {
             rb.bodyType = RigidbodyType2D.Dynamic;

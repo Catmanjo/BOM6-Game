@@ -38,6 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
+  m_IndirectSpecularColor: {r: 0, g: 0, b: 0, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -725,7 +726,7 @@ Transform:
   m_GameObject: {fileID: 339654300}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -7.64, y: 12.34, z: 0}
+  m_LocalPosition: {x: 0.84, y: -1.08, z: 0}
   m_LocalScale: {x: 1, y: 1.4463, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -830,8 +831,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 39b042e195d58b44a9e4abb67884cf4b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  JumpForce: 120
-  JumpHoldForce: 3
+  JumpForce: 8.5
+  JumpHoldForce: 2
   JumpHoldDuration: 0.3
 --- !u!114 &339654307
 MonoBehaviour:
@@ -3564,12 +3565,12 @@ MonoBehaviour:
   m_RequiresColorTexture: 0
   m_Version: 2
   m_TaaSettings:
-    m_Quality: 3
-    m_FrameInfluence: 0.1
-    m_JitterScale: 1
-    m_MipBias: 0
-    m_VarianceClampScale: 0.9
-    m_ContrastAdaptiveSharpening: 0
+    quality: 3
+    frameInfluence: 0.1
+    jitterScale: 1
+    mipBias: 0
+    varianceClampScale: 0.9
+    contrastAdaptiveSharpening: 0
 --- !u!1 &1777249742
 GameObject:
   m_ObjectHideFlags: 0
