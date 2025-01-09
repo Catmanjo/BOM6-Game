@@ -726,7 +726,7 @@ Transform:
   m_GameObject: {fileID: 339654300}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0.84, y: -1.08, z: 0}
+  m_LocalPosition: {x: -8.02, y: 12.29, z: 0}
   m_LocalScale: {x: 1, y: 1.4463, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -745,8 +745,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0312ed2d09776ab4a8a32793e77a4b8c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  sr: {fileID: 339654301}
   Target: Spike
+  fun: 0
+  sr: {fileID: 339654301}
+  rb: {fileID: 0}
+  force: {fileID: 0}
 --- !u!50 &339654304
 Rigidbody2D:
   serializedVersion: 4
@@ -831,7 +834,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 39b042e195d58b44a9e4abb67884cf4b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  JumpForce: 8.5
+  JumpForce: 4
   JumpHoldForce: 2
   JumpHoldDuration: 0.3
 --- !u!114 &339654307
@@ -2299,6 +2302,7 @@ GameObject:
   - component: {fileID: 1072841271}
   - component: {fileID: 1072841272}
   - component: {fileID: 1072841273}
+  - component: {fileID: 1072841274}
   m_Layer: 0
   m_Name: RoofSpike
   m_TagString: Spike
@@ -2402,7 +2406,7 @@ BoxCollider2D:
   m_CallbackLayers:
     serializedVersion: 2
     m_Bits: 4294967295
-  m_IsTrigger: 1
+  m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: 0}
@@ -2443,7 +2447,7 @@ Rigidbody2D:
     m_Bits: 0
   m_Interpolate: 0
   m_SleepingMode: 1
-  m_CollisionDetection: 0
+  m_CollisionDetection: 1
   m_Constraints: 0
 --- !u!114 &1072841273
 MonoBehaviour:
@@ -2461,6 +2465,20 @@ MonoBehaviour:
   DetectRange: 6
   HorizontalRange: 2
   Tag: Player
+--- !u!114 &1072841274
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1072841268}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e0fc268c17e923444a9291a64a8f3660, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  FallenTag: Ground
+  NewTag: FallenSpike
 --- !u!1 &1080610823
 GameObject:
   m_ObjectHideFlags: 0
