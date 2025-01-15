@@ -6,6 +6,7 @@ public class SwordTrigger : MonoBehaviour
 {
     [SerializeField] private BoxCollider2D bc2d = new BoxCollider2D();
     [SerializeField] private SpriteRenderer sr = new SpriteRenderer();
+
     void Start()
     {
         sr.color = Color.green;
@@ -19,7 +20,7 @@ public class SwordTrigger : MonoBehaviour
     }
 
 
-    IEnumerator SwingSword()
+    IEnumerator SwingSword() //Swings sword
     {
         bc2d.enabled = true;
         sr.color = Color.red;

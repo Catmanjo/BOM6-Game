@@ -4,8 +4,9 @@
 TagManager:
   serializedVersion: 2
   tags:
-  - Hit
-  - Sword
+  - Ground
+  - Spike
+  - FallenSpike
   layers:
   - Default
   - TransparentFX

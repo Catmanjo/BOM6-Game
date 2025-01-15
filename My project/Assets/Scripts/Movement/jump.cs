@@ -43,7 +43,7 @@ public class jump : MonoBehaviour
     {
         if (collision.gameObject.CompareTag("Ground"))
         {
-            isGrounded = true;
+            isGrounded = true;//
         }
     }
     private void OnCollisionExit2D(Collision2D collision)
