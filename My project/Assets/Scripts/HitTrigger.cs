@@ -10,15 +10,11 @@ public class HitTrigger : MonoBehaviour
     [SerializeField] private Rigidbody2D rb;
     [SerializeField] private ConstantForce2D force;
 
-    private void OnTriggerEnter2D(Collider2D collision)
+    private void OnCollisionEnter2D(Collision2D collision)
     {
         if (collision.gameObject.CompareTag(Target)) // Changes color if hit by sword hitbox
         {
-            sr.color = Color.red;
-            if(fun == true)
-            {
-                StartCoroutine(Fun());
-            }
+            transform.position = new Vector3(0, 0, 0);
         }
     }
 
