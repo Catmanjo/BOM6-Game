@@ -1,6 +1,5 @@
 using System;
 using UnityEngine;
-
 public class MoneyPickUp : MonoBehaviour
 {
     public static event Action<GameObject> OnPickUp;

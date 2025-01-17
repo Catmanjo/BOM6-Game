@@ -1,32 +1,24 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
-
 public class SpikeFall : MonoBehaviour
 {
-    public Transform Spike;
-    public float DetectRange = 6f;
-    public float HorizontalRange = 2f;
-    public string Tag = "Player";
+    private Transform Spike;
+    private float DetectRange = 6f;
+    private float HorizontalRange = 2f;
     private Rigidbody2D rb;
+
     void Start()
     {
-        //pakt de rigidbody van de spike
-        rb = Spike.GetComponent<Rigidbody2D>();
-        if (rb == null)
-        {
-            Debug.LogError("Geen Rigidbody, doe er iets aan!");
-        }
+        rb = GetComponent<Rigidbody2D>();
         rb.bodyType = RigidbodyType2D.Static;
     }
 
     void Update()
     {
         Vector2 boxSize = new Vector2(HorizontalRange, DetectRange);
-        RaycastHit2D hit = Physics2D.BoxCast(Spike.position, boxSize, 0f, Vector2.down, DetectRange);
-        //laat de spike vallen al komt een "Player" in range
-        if (hit.collider != null && hit.collider.CompareTag(Tag))
+        RaycastHit2D hit = Physics2D.BoxCast(transform.position, boxSize, 0f, Vector2.down, DetectRange);
+        if (hit.collider != null && hit.collider.CompareTag("Player"))
         {
+                
             rb.bodyType = RigidbodyType2D.Dynamic;
         }
     }

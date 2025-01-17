@@ -1,31 +1,36 @@
+using System;
 using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
-
 public class SwordTrigger : MonoBehaviour
 {
-    [SerializeField] private BoxCollider2D bc2d = new BoxCollider2D();
-    [SerializeField] private SpriteRenderer sr = new SpriteRenderer();
+    private BoxCollider2D Bc2d;
+    public static event Action<GameObject> DmgStone;
 
     void Start()
     {
-        sr.color = Color.green;
+        Bc2d = GetComponent<BoxCollider2D>();
     }
+
     void Update()
     {
-        if (Input.GetKeyDown(KeyCode.W))
+        if (Input.GetKeyUp(KeyCode.J))
         {
             StartCoroutine(SwingSword());
         }
     }
 
-
-    IEnumerator SwingSword() //Swings sword
+    IEnumerator SwingSword()
     {
-        bc2d.enabled = true;
-        sr.color = Color.red;
-        yield return new WaitForSeconds(1);
-        bc2d.enabled = false;
-        sr.color = Color.green;
+        Bc2d.enabled = true;
+        yield return new WaitForSeconds(0.5f);
+        Bc2d.enabled = false;
+    }
+
+    private void OnTriggerEnter2D(UnityEngine.Collider2D other)
+    {
+        if (other.CompareTag("Stone"))
+        {
+            DmgStone.Invoke(gameObject);
+        }
     }
 }
