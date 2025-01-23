@@ -32,13 +32,41 @@ public class AnimationController : MonoBehaviour
         {
             ac.SetBool("Walking", false);
         }
+
+        if (Input.GetKey(KeyCode.Space))
+        {
+            ac.SetBool("Jumping", true);
+            ac.SetBool("Walking", false);
+            ac.SetBool("Swinging", false);
+        }
+        else 
+        {
+            ac.SetBool("Jumping", false);
+        }
+
+        if (Input.GetKeyDown(KeyCode.J)) 
+        { 
+            ac.SetBool("Swinging", true);
+            Flip();
+            ac.SetBool("Walking", false);
+            ac.SetBool("Jumping", false);
+        }
+        else
+        {
+            ac.SetBool("Swinging", false);
+        }
     }
 
-    //void Flip()
-    //{
-    //    facingRight = !facingRight;
-    //    Vector3 scale = transform.localScale;
-    //    scale.x *= -1;  // Flip the character without changing scale magnitude
-    //    transform.localScale = scale;
-    //}
+    IEnumerator Flip()
+    {
+        //facingRight = !facingRight;
+        Vector3 scale = transform.localScale;
+        scale.x *= -1;  // Flip the character without changing scale magnitude
+        transform.localScale = scale;
+        yield return new WaitForSeconds(1);
+        //facingRight = !facingRight;
+        scale = transform.localScale;
+        scale.x *= -1;  // Flip the character without changing scale magnitude
+        transform.localScale = scale;
+    }
 }

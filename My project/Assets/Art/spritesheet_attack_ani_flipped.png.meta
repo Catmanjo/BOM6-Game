@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: ba1274c2f6b4d8747b4751cbe0974e04
+guid: c4a5004e13267f84896ad58f5197076b
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -110,7 +110,7 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: jump_animatie_sprite_sheet_0
+      name: spritesheet_attack_ani_flipped_0
       rect:
         serializedVersion: 2
         x: 0
@@ -118,20 +118,20 @@ TextureImporter:
         width: 512
         height: 512
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 1e5901ee62decb34586398337fffee51
-      internalID: 994930997
+      spriteID: df62b684e03c8fd45b061f34f12d7b8c
+      internalID: 2122559193
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: jump_animatie_sprite_sheet_1
+      name: spritesheet_attack_ani_flipped_1
       rect:
         serializedVersion: 2
         x: 512
@@ -139,20 +139,20 @@ TextureImporter:
         width: 512
         height: 512
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: e1da9db0c8d8bc340a87cb031330c151
-      internalID: -1909974389
+      spriteID: db876c101b30e684ebb563ce76a11645
+      internalID: -730821927
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: jump_animatie_sprite_sheet_2
+      name: spritesheet_attack_ani_flipped_2
       rect:
         serializedVersion: 2
         x: 1024
@@ -160,20 +160,20 @@ TextureImporter:
         width: 512
         height: 512
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: a44178c11d7668c40a82a8584a7733a9
-      internalID: -1345388337
+      spriteID: a6fa0a3134d6e564a98c936c209a1713
+      internalID: 1498021321
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: jump_animatie_sprite_sheet_3
+      name: spritesheet_attack_ani_flipped_3
       rect:
         serializedVersion: 2
         x: 1536
@@ -181,20 +181,20 @@ TextureImporter:
         width: 512
         height: 512
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: b3488328dfecc1940ad7d292a40d3978
-      internalID: 2099353784
+      spriteID: 930a3d6232bb5f445ae805f860d2c142
+      internalID: -1485023575
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: jump_animatie_sprite_sheet_4
+      name: spritesheet_attack_ani_flipped_4
       rect:
         serializedVersion: 2
         x: 2048
@@ -202,77 +202,14 @@ TextureImporter:
         width: 512
         height: 512
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 1b515c6aaa68f464c85194e53dbb5da6
-      internalID: 334552808
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: jump_animatie_sprite_sheet_5
-      rect:
-        serializedVersion: 2
-        x: 2560
-        y: 0
-        width: 512
-        height: 512
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 83d3ce2e92c0aa143a02a155b8c3fd03
-      internalID: -1681725939
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: jump_animatie_sprite_sheet_6
-      rect:
-        serializedVersion: 2
-        x: 3072
-        y: 0
-        width: 512
-        height: 512
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 76703b3a853ee7c429966644ab8bef62
-      internalID: 494402475
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: jump_animatie_sprite_sheet_7
-      rect:
-        serializedVersion: 2
-        x: 3584
-        y: 0
-        width: 512
-        height: 512
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 74f507d5c4fc04d42bda48646400523e
-      internalID: 1516463939
+      spriteID: 0d9c7fe77930c7f4296442a0b19f8629
+      internalID: 1247510574
       vertices: []
       indices: 
       edges: []
@@ -288,14 +225,11 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      jump_animatie_sprite_sheet_0: 994930997
-      jump_animatie_sprite_sheet_1: -1909974389
-      jump_animatie_sprite_sheet_2: -1345388337
-      jump_animatie_sprite_sheet_3: 2099353784
-      jump_animatie_sprite_sheet_4: 334552808
-      jump_animatie_sprite_sheet_5: -1681725939
-      jump_animatie_sprite_sheet_6: 494402475
-      jump_animatie_sprite_sheet_7: 1516463939
+      spritesheet_attack_ani_flipped_0: 2122559193
+      spritesheet_attack_ani_flipped_1: -730821927
+      spritesheet_attack_ani_flipped_2: 1498021321
+      spritesheet_attack_ani_flipped_3: -1485023575
+      spritesheet_attack_ani_flipped_4: 1247510574
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
