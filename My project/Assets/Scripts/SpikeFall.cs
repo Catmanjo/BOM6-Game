@@ -2,8 +2,8 @@ using UnityEngine;
 public class SpikeFall : MonoBehaviour
 {
     private Transform Spike;
-    private float DetectRange = 6f;
-    private float HorizontalRange = 2f;
+    private float DetectRange = 20f;
+    private float HorizontalRange = 3f;
     private Rigidbody2D rb;
 
     void Start()
